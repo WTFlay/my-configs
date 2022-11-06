@@ -24,6 +24,8 @@ keymap.set("n", "<leader>q", ":q<cr>")
 keymap.set("n", "<leader>sm", ":MaximizerToggle<cr>")
 
 -- nvim-tree
-keymap.set('n', '<leader>e', ':NvimTreeToggle<cr>')
+keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<cr>')
 
 keymap.set('n', '<leader>H', ':noh<cr>')
+
+keymap.set('n', 'Q', ':bd<cr>')

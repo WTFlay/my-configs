@@ -12,3 +12,4 @@ require "user.plugins.lsp.lspsaga"
 require 'user.plugins.treesitter'
 require 'user.plugins.bufferline'
 require 'user.plugins.telescope'
+require 'user.plugins.gitsigns'
