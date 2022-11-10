@@ -95,6 +95,8 @@ return packer.startup(function(use)
 
 	use("ThePrimeagen/vim-be-good")
 
+	use("windwp/nvim-ts-autotag")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
