@@ -1,33 +1,35 @@
-local mason_status, mason = pcall(require, 'mason')
+local mason_status, mason = pcall(require, "mason")
 if not mason_status then
-  return
+	return
 end
 
-local masin_lspconfig_status, mason_lspconfig = pcall(require, 'mason-lspconfig')
+local masin_lspconfig_status, mason_lspconfig = pcall(require, "mason-lspconfig")
 if not masin_lspconfig_status then
-  return
+	return
 end
 
-local mason_null_ls_status, mason_null_ls = pcall(require, 'mason-null-ls')
+local mason_null_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
 if not mason_null_ls_status then
-  return
+	return
 end
 
 mason.setup()
 mason_lspconfig.setup({
-  ensure_installed = {
-    "tsserver",
-    "html",
-    "cssls",
-    "sumneko_lua",
-    "vuels",
-  }
+	ensure_installed = {
+		"tsserver",
+		"html",
+		"cssls",
+		"sumneko_lua",
+		"vuels",
+		"jdtls",
+		"groovyls",
+	},
 })
 mason_null_ls.setup({
-  ensure_installed = {
-    "prettier",
-    "stylua",
-    "eslint_d",
-    "gitlint",
-  }
+	ensure_installed = {
+		"prettier",
+		"stylua",
+		"eslint_d",
+		"gitlint",
+	},
 })

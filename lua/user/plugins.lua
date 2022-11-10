@@ -43,7 +43,8 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } })
 	-- colorscheme
 	use("folke/tokyonight.nvim")
-	use("EdenEast/nightfox.nvim")
+	-- use("EdenEast/nightfox.nvim")
+	-- use("cocopon/iceberg.vim")
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp")
@@ -91,6 +92,8 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim")
 
 	use("norcalli/nvim-colorizer.lua")
+
+	use("ThePrimeagen/vim-be-good")
 
 	if packer_bootstrap then
 		require("packer").sync()
