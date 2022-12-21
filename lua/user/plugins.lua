@@ -97,6 +97,8 @@ return packer.startup(function(use)
 
 	use("windwp/nvim-ts-autotag")
 
+	use("klen/nvim-test")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
