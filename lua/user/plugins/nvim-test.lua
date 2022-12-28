@@ -4,3 +4,9 @@ if not status then
 end
 
 nvim_test.setup()
+
+local keymap = vim.keymap
+
+keymap.set("n", "<leader>tf", ":TestFile<CR>")
+keymap.set("n", "<leader>tn", ":TestNearest<CR>")
+keymap.set("n", "<leader>tl", ":TestLast<CR>")

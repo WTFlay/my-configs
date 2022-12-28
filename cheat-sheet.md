@@ -29,3 +29,6 @@
 | \<leader\>rf | :TypescriptRenameFile             | rename file and update imports              |
 | \<leader\>oi | :TypescriptOrganizeImports        | organize imports                            |
 | \<leader\>ru | :TypescriptRemoveUnused           | remove unused variables                     |
+| \<leader\>tf | :TestFile                         | run file test                               |
+| \<leader\>tn | :TestNearest                      | run test under cursor                       |
+| \<leader\>tl | :TestLast                         | run last test                               |
