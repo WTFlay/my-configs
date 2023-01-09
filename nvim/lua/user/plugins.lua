@@ -99,6 +99,14 @@ return packer.startup(function(use)
 
 	use("klen/nvim-test")
 
+	use({
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
